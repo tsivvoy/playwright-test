@@ -1,0 +1,30 @@
+{
+  "name": "api-test-playwright",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tsivvoy/api-test-playwright.git",
+  "author": "Sivvoy Taing <sivvo@yahoo.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:mock": "mockoon-cli start --data mockoon/mock-api.json --port 3000",
+    "test": "NODE_ENV=test npx playwright test",
+    "staging": "NODE_ENV=staging npx playwright test",
+    "production": "NODE_ENV=production npx playwright test"
+  },
+  "dependencies": {
+    "@mockoon/cli": "^8.4.0",
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.4.1",
+    "@types/uuid": "^10.0.0",
+    "dotenv": "^16.4.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.2.0",
+    "@typescript-eslint/parser": "^8.2.0",
+    "eslint": "^9.9.0",
+    "eslint-plugin-import": "^2.29.1"
+  }
+}

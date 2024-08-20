@@ -1,0 +1,15 @@
+{
+    "name": "Mock API",
+    "endpoint": "/users",
+    "method": "GET",
+    "status": 200,
+    "responses": [
+      {
+        "body": [
+          { "id": 1, "name": "John Doe" },
+          { "id": 2, "name": "Jane Doe" }
+        ]
+      }
+    ]
+  }
+  
