@@ -1,15 +1,29 @@
-{
+[
+  {
     "name": "Mock API",
-    "endpoint": "/users",
-    "method": "GET",
+    "endpoint": "/v1/favourites",
+    "method": "POST",
     "status": 200,
     "responses": [
       {
-        "body": [
-          { "id": 1, "name": "John Doe" },
-          { "id": 2, "name": "Jane Doe" }
-        ]
+        "body": {
+          "message": "SUCCESS",
+          "id": 97432
+        }
+      }
+    ]
+  },
+  {
+    "name": "Mock API - Invalid Data",
+    "endpoint": "/v1/favourites",
+    "method": "POST",
+    "status": 400,
+    "responses": [
+      {
+        "body": {
+          "message": "INVALID_DATA"
+        }
       }
     ]
   }
-  
+]

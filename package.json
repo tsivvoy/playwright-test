@@ -1,15 +1,14 @@
 {
-  "name": "api-test-playwright",
+  "name": "playwright-test",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/tsivvoy/api-test-playwright.git",
-  "author": "Sivvoy Taing <sivvo@yahoo.com>",
+  "author": "",
   "license": "MIT",
   "scripts": {
     "start:mock": "mockoon-cli start --data mockoon/mock-api.json --port 3000",
-    "test": "NODE_ENV=test npx playwright test",
-    "staging": "NODE_ENV=staging npx playwright test",
-    "production": "NODE_ENV=production npx playwright test"
+    "int:test": "NODE_ENV=test npx playwright test src/tests/integration/",
+    "mock:local": "NODE_ENV=local npx playwright test src/tests/mock/"
   },
   "dependencies": {
     "@mockoon/cli": "^8.4.0",

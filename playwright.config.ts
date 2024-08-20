@@ -7,7 +7,7 @@ export default defineConfig({
   projects: [
     {
       name: 'api-tests',
-      testMatch: /src\/tests\/.*\.test\.ts$/,
+      testMatch: /src\/tests\/(integration|mock)\/.*\.test\.ts$/,
       use: {
         baseURL: process.env.BASE_URL,
       },

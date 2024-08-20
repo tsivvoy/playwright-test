@@ -1,5 +1,5 @@
-import { test, expect, APIRequestContext } from '@playwright/test'
-import { create } from '../api/dogBreed/index'
+import { test, expect } from '@playwright/test'
+import { create } from '../../api/dogBreed/index'
 import { v4 as uuidv4 } from 'uuid'
 
 test('should successfully create a favourite', async ({ request }) => {
