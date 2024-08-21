@@ -7,8 +7,9 @@
   "license": "MIT",
   "scripts": {
     "start:mock": "mockoon-cli start --data mockoon/DogBreed.json --port 3000",
-    "int:test": "NODE_ENV=test npx playwright test src/tests/integration/",
-    "mock:local": "NODE_ENV=local npx playwright test src/tests/mock/"
+    "api:test": "NODE_ENV=test npx playwright test src/tests/api/",
+    "mock:local": "NODE_ENV=local npx playwright test src/tests/mock/",
+    "web:test": "NODE_ENV=test npx playwright test src/tests/web/" 
   },
   "dependencies": {
     "@mockoon/cli": "^8.4.0",
