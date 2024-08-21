@@ -6,7 +6,7 @@
   "author": "",
   "license": "MIT",
   "scripts": {
-    "start:mock": "mockoon-cli start --data mockoon/mock-api.json --port 3000",
+    "start:mock": "mockoon-cli start --data mockoon/DogBreed.json --port 3000",
     "int:test": "NODE_ENV=test npx playwright test src/tests/integration/",
     "mock:local": "NODE_ENV=local npx playwright test src/tests/mock/"
   },

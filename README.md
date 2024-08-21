@@ -15,7 +15,7 @@
     API_KEY=your_personal_key
 
 # Run Mockoon server
-1. yarn start: mock
+1. yarn start:mock
 2. yarn mock:test - will run mock test against test environment
 
 # Run Tests

@@ -1,0 +1,29 @@
+{
+  "favourites": [{
+    "success": {
+      "endpoint": "/v1/favourites",
+      "method": "POST",
+      "status": 200,
+      "responses": [
+        {
+          "body": {
+            "message": "SUCCESS",
+            "id": 97445
+          }
+        }
+      ]
+    },
+    "invalid": {
+      "endpoint": "/v1/favourites",
+      "method": "POST",
+      "status": 400,
+      "responses": [
+        {
+          "body": {
+            "message": "INVALID_DATA"
+          }
+        }
+      ]
+    }
+  }]
+}
